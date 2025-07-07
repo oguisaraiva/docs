@@ -1,17 +1,17 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "willow",
+  "theme": "almond",
   "name": "TecnoSuper",
   "colors": {
     "primary": "#ffffff",
-    "light": "#5e5e5e",
+    "light": "#6b6b6b",
     "dark": "#6b6b6b"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "/doc",
+        "tab": "",
         "groups": [
           {
             "group": "Guias básicos",
