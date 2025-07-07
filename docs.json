@@ -5,7 +5,7 @@
   "colors": {
     "primary": "#ffffff",
     "light": "#d1d1d1",
-    "dark": "#ffffff"
+    "dark": "#6b6b6b"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,7 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Guias básicos",
             "pages": [
               "index",
               "quickstart",
@@ -22,7 +22,7 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Essenciais",
             "pages": [
               "essentials/markdown",
               "essentials/code",
