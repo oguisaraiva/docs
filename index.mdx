@@ -1,71 +1,70 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: "Introdução"
+description: "Seja bem-vindo à tela inicial de nossa documentação."
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+### 💻 Comandos de acesso e navegação (Terminal)
 
-## Setting up
+<Note>
+  Comandos antes de efetuar login no **asterisk** 
+</Note>
 
-The first step to world-class documentation is setting up your editing environments.
+`uptime` - Verificar o tempo de atividade do servidor.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+`top` - Verificar os processos que estão em execução no servidor.
 
-## Make it yours
+`ifconfig` - Mostra as interface de redes do PBX.
 
-Update your docs to your brand and add valuable content for the best user conversion.
+`ping` - Testa a conectividade do PBX com um destino.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+`mtr` - Além de testar a conectividade com o destino, ele mostra o caminho que os pacotes estão percorrendo até o destino.
+
+`df -h` - Mostra os espaço ocupados e livre de cada partição.
+
+`iptables` - Mostra os ips liberados e os banidos no PBX.
+
+`iptables -I INPUT -s IP -j ACCEPT` - Libera um IP no PBX.
+
+`iptables -I INPUT -s IP -j DROP` - Dropa pacotes vindos de um IP (Não responde os pacotes vindos da origem).
+
+`/etc/init.d/khomp-services restart` - Restarta os serviços khomp.
+
+`cd - change directory` - Navegação dentre os diretórios do sistema.
+
+`service asterisk restart` - Reinicia o asterisk (Todas as ligações que estão em andamento irão cair).
+
+`fwconsole start` - Inicia o asterisk caso o mesmo não tenha sido iniciado manualmente (Chan_PJSIP nova versão).
+
+`service fop2 restart` - Restarta o fop2.
+
+<Warning>
+  Comandos após efetuar login no **asterisk**
+</Warning>
+
+`sip show peers` - Visualiza os ramais e troncos SIP criados(Online e Offline). (chan_SIP)
+
+`sip show peer numero_ramal` - verifica informações de um ramal especifico (chan_SIP)
+
+`pjsip show aors` - Visualiza os ramais e troncos SIP criados(Online e Offline). (chan_PJSIP)
+
+`pjsip show aor numero_ramal` - verifica informação de um ramal especifico (chan_SIP)
+
+`core show calls` - verifica a quantidade de ligações ativas no momento.
+
+`core show channels` - verifica a quantidade de ligações ativas e os canais.
+
+`database show DND` - Verifica se possui DND ativo (Ativado via sistema \*78)
+
+`database show CF` - verifica se possui algum redirecionamento de ramal ativo (Ativado via sistema \*72)
+
+`khomp summary` - Lista os equipamentos da khomp no sistema (EBS's e Placas E1).
+
+`khomp channels show` - Lista os canais ativos e inoperantes (EBS's e Placas E1)
+
+`khomp links show` - Informa se o LINK E1 está sincronizado UP.
+
+`khomp links errors show` - Informa os erros que estão apresentando no link E1.
+
+`khomp links errors clear` - "limpa" os erros do link E1
+
+`iax2 show peers` - Mostra os troncos IAX com os outros PBX caso tenha.
