@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "purple",
+  "name": "TecnoSuper",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#3423EB",
+    "light": "#3423EB",
+    "dark": "#2E2685"
   },
   "favicon": "/favicon.svg",
   "navigation": {
