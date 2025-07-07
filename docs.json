@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "TecnoSuper",
   "colors": {
     "primary": "#ffffff",
@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": " ",
+        "tab": "page",
         "groups": [
           {
             "group": "Guias básicos",
