@@ -3,9 +3,9 @@
   "theme": "maple",
   "name": "TecnoSuper",
   "colors": {
-    "primary": "#7654ff",
-    "light": "#7654ff",
-    "dark": "#4f3e96"
+    "primary": "#d6ccff",
+    "light": "#d6ccff",
+    "dark": "#8e89a3"
   },
   "favicon": "/favicon.svg",
   "navigation": {
